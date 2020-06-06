@@ -1,38 +1,10 @@
-:root{
-  --title-color: #322153;
-  --primary-color: #34bc79;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-}
-
-html{
-  font-family: 'Roboto', sans-serif;
-}
-
-body{
-  background-color: #f0f0f5;
-  -webkit-font-smoothing: antialiased;
-}
-
-a{
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Ubuntu', sans-serif; /* em fontes com nomes simples, como Ubuntu, as aspas são opicionais*/
-  color: var(--title-color);
-}
-
 #page-home{
   background: url('../assets/home-background.svg') no-repeat;
   /* outra forma
   background: url('../assets/home-background.svg') no-repeat; 
   no-repeat -> impede que a imagem se repita até preencher toda a área do background 
   */
-  background-position: 35vw bottom;
+  background-position: 35vw bottom; /*eixos x e y, respectivamente */
   height: 100vh;
 }
 
@@ -138,27 +110,4 @@ h1, h2, h3, h4, h5, h6{
   flex: 1;
   color: white;
   text-align: center;
-}
-
-@media (max-width: 900px){
-  #page-home{
-    background-position-x: 70vw;
-  }
-
-  #page-home .content{
-    align-items: center;
-    text-align: center;
-  }
-
-  #page-home header a{
-    position: absolute;
-    bottom: 48px;
-
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  #page-home main{
-    align-items: center;
-  }
 }
